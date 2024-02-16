@@ -44,21 +44,51 @@ In this representation, the ligther the color, the higher the similarity between
 We applied several ML algorithms to train multiple endometriosis prediction models. Specifically, we applied decision trees, Random Forest and Logistic Regression. Besides generating predictions, these models also provide an importance analysis feature, which can be used to identify and remove non-contributing features from future surveys. Model performance was evaluated using common ML metrics : ac-
 curacy, sensitivity (recall), specificity, precision, F1-score,area under the ROC curve (AUC) and Matthew Coorelation Coefficient. To ensure significance of the results, we used a ten-fold cross-validation procedure.
 
+As discussed above, for each model type we also analyzed the effect of adding each symptom in the order of its importance based on the feature importance ranking derived from initial classification models (the models that were trained on the entire set of features
+
 ### Logistic Regression
 
-Description and usage of Logistic Regression.
+Logistic regression is a straightforward and interpretable algorithm, well-suited for binary classification tasks. It provides probability estimates, enabling easy interpretation of feature impacts. However, its effectiveness may diminish in the presence of non-linear relationships or a large number of features.
+Below is the F1 Score and the AUC for the logistic regression model:
+
+<img src="figures/logistic_regression_performance.svg" alt="F1 Score" width="700"/>
+
+
+
+*Figure 2: F1 Score and AUC*
 
 ### Decision Trees
 
-Description and usage of Decision Trees.
+This is a simple, tree-structured classifier, where internal nodes represent the features of a dataset, branches represent the decision rules, and each leaf node represents the outcome (class). The tree structure (organization of nodes) is determined based on the importance of the nodes using an attribute selection measure, such as information gain or Gini index. The model’s simplicity is both its weakness and its strength: On the one hand, this model is limited in its capacity to capture complex relationships between variables, yet on the other hand, its classification process is simple to interpret.
+This is a graphical representation of how decision trees work : 
+<img src="figures/decision_tree.svg" alt="F1 Score" width="700"/>
+
+
+Below is the F1 Score and the AUC for the decision trees:
+
+<img src="figures/decision_tree_performance.svg" alt="F1 Score" width="700"/>
+
+*Figure 3: F1 Score and AUC*
+
+| Metric      | Mean   | Std    |
+|-------------|--------|--------|
+| Recall      | 0.8919 | 0.0401 |
+| Specificity | 0.8580 | 0.0672 |
+| Precision   | 0.8763 | 0.0497 |
+| F1-score    | 0.8827 | 0.0300 |
+| Accuracy    | 0.8757 | 0.0339 |
+| AUC         | 0.8750 | 0.0349 |
 
 ### Random Forest
 
-Description and usage of Random Forest
+This model generates a “forest” of decision trees, such that each tree is trained on a random subset of the features. The Random Forest model uses the entire collection of decision trees to classify a given sample, and eventually determines the classification output based on the trees’ majority vote, that is, the class that is the output of by most trees
+Below is the F1 Score and the AUC for the random forest:
 
-## Dataset 
+<img src="figures/random_forest_performance.svg" alt="F1 Score" width="700"/>
 
+*Figure 4: F1 Score and AUC*
 
+## Results 
 
 ## Installation 
 
