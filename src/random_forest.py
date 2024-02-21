@@ -54,7 +54,7 @@ for num_features in num_features_list:
 plt.plot([0, 1], [0, 1], 'k--', linewidth=2)
 
 # Set plot labels and title
-plt.xlabel('False Positive Rate (Specificity)')
+plt.xlabel('False Positive Rate (1 - Specificity)')
 plt.ylabel('True Positive Rate (Recall/Sensitivity)')
 # AGenerally, the higher the AUC score, the better a classifier performs for the given task.
 plt.title('ROC Curve for Different Numbers of Features')
