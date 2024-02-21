@@ -41,8 +41,7 @@ Below is a graph representing the Jaccard Index for various subsets of symptoms:
 In this representation, the ligther the color, the higher the similarity between 2 symptoms.
 
 ## Machine Learning Algorithms
-We applied several ML algorithms to train multiple endometriosis prediction models. Specifically, we applied decision trees, Random Forest and Logistic Regression. Besides generating predictions, these models also provide an importance analysis feature, which can be used to identify and remove non-contributing features from future surveys. Model performance was evaluated using common ML metrics : ac-
-curacy, sensitivity (recall), specificity, precision, F1-score,area under the ROC curve (AUC) and Matthew Coorelation Coefficient. To ensure significance of the results, we used a ten-fold cross-validation procedure.
+We applied several ML algorithms to train multiple endometriosis prediction models. Specifically, we applied decision trees, Random Forest and Logistic Regression. Besides generating predictions, these models also provide an importance analysis feature, which can be used to identify and remove non-contributing features from future surveys. Model performance was evaluated using common ML metrics : accuracy, sensitivity (recall), specificity, precision, F1-score,area under the ROC curve (AUC) and Matthew Coorelation Coefficient. To ensure significance of the results, we used a ten-fold cross-validation procedure.
 
 As discussed above, for each model type we also analyzed the effect of adding each symptom in the order of its importance based on the feature importance ranking derived from initial classification models (the models that were trained on the entire set of features
 
