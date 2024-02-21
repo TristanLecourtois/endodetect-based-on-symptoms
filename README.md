@@ -53,6 +53,9 @@ Below is the F1 Score and the AUC for the logistic regression model:
 
 <img src="figures/logistic_regression_performance.svg" alt="F1 Score" width="700"/>
 
+*Figure 2: F1 Score and AUC*
+
+
 | Metrics       | Mean    | Std        |
 |---------------|---------|------------|
 | Recall        | 0.9108  | 0.0437     |
@@ -62,8 +65,6 @@ Below is the F1 Score and the AUC for the logistic regression model:
 | Accuracy      | 0.9167  | 0.0291     |
 | AUC           | 0.9171  | 0.0297     |
 
-
-*Figure 2: F1 Score and AUC*
 
 ### Decision Trees
 
