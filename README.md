@@ -13,7 +13,7 @@ This repository focuses on using machine learning (ML) to develop a self-diagnos
 
 ## Introduction
 Current endometriosis diagnostic methods are invasive and expensive, prompting the need for non-invasive screening tools. Various studies have explored biomarkers, genomic data, and patient-reported symptoms, but none have been entirely successful in replacing laparoscopy. This project presented focuses on using machine learning
-(ML) to develop a self-diagnostic tool based solely on patient-reported symptoms. The goal is to create an easy-to-use model for women in the early stages of medical investigation, providing a preliminary indication of their likelihood of having endometriosis. The study identifies a set of 24 symptoms most effective for endometriosis prediction, achieving high sensitivity (0.93) and specificity (0.95) on holdout data. The aim is to reduce the time-to-diagnosis and provide insights into the importance of different symptoms in predicting endometriosis.
+(ML) to develop a self-diagnostic tool based solely on patient-reported symptoms. The goal is to create an easy-to-use model for women in the early stages of medical investigation, providing a preliminary indication of their likelihood of having endometriosis. The study identifies a set of 24 symptoms most effective for endometriosis prediction, achieving high sensitivity (0.93) and specificity (0.93) on holdout data. The aim is to reduce the time-to-diagnosis and provide insights into the importance of different symptoms in predicting endometriosis.
 
 ## Dataset 
 
@@ -53,6 +53,14 @@ Below is the F1 Score and the AUC for the logistic regression model:
 
 <img src="figures/logistic_regression_performance.svg" alt="F1 Score" width="700"/>
 
+| Metrics       | Mean    | Std        |
+|---------------|---------|------------|
+| Recall        | 0.9108  | 0.0437     |
+| Specificity   | 0.9234  | 0.0591     |
+| Precision     | 0.9318  | 0.0486     |
+| F1-score      | 0.9196  | 0.0268     |
+| Accuracy      | 0.9167  | 0.0291     |
+| AUC           | 0.9171  | 0.0297     |
 
 
 *Figure 2: F1 Score and AUC*
@@ -87,6 +95,15 @@ Below is the F1 Score and the AUC for the random forest:
 <img src="figures/random_forest_performance.svg" alt="F1 Score" width="700"/>
 
 *Figure 4: F1 Score and AUC*
+
+| Metric        | Mean   | Std       |
+|---------------|--------|-----------|
+| Recall        | 0.8946 | 0.0426    |
+| Specificity   | 0.9350 | 0.0366    |
+| Precision     | 0.9390 | 0.0319    |
+| F1-score      | 0.9154 | 0.0258    |
+| Accuracy      | 0.9138 | 0.0256    |
+
 
 ## Results 
 
