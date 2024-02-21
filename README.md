@@ -19,6 +19,15 @@ Current endometriosis diagnostic methods are invasive and expensive, prompting t
 
 The dataset included 56 endometriosis symptoms that were compiled based on an extensive review of relevant literature. The dataset used in this project consists of 800 examples, each containing the symptoms related to endometriosis. It is a continuous dataset, and each entry is labeled with a binary response (0 or 1) indicating the presence or absence of the respective symptom.
 
+| Feature                  | Importance |
+|--------------------------|------------|
+| Painful Periods          | 0.536208   |
+| Fatigue / Chronic fatigue| 0.054535   |
+| Cysts (unspecified)      | 0.039391   |
+| Lower back pain          | 0.037201   |
+| Ovarian cysts            | 0.027674   |
+
+
 ### Feature Selection with Jaccard Index
 
 To enhance the model's performance and avoid redundancy, we applied the Jaccard Index to the dataset. The Jaccard Index is a measure of similarity between two sets. In our context, it helps identify and eliminate redundant symptoms, ensuring a more concise and informative set of features. It is calculated as the size of the intersection of two sets divided by the size of their union. In the context of our dataset:
