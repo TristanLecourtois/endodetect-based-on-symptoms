@@ -70,6 +70,8 @@ Below is the F1 Score and the AUC for the logistic regression model:
 
 This is a simple, tree-structured classifier, where internal nodes represent the features of a dataset, branches represent the decision rules, and each leaf node represents the outcome (class). The tree structure (organization of nodes) is determined based on the importance of the nodes using an attribute selection measure, such as information gain or Gini index. The model’s simplicity is both its weakness and its strength: On the one hand, this model is limited in its capacity to capture complex relationships between variables, yet on the other hand, its classification process is simple to interpret.
 This is a graphical representation of how decision trees work : 
+
+
 <img src="figures/decision_tree.svg" alt="F1 Score" width="700"/>
 
 
@@ -107,6 +109,11 @@ Below is the F1 Score and the AUC for the random forest:
 
 
 ## Results 
+
+With the obtained results, we chose to utilize the Random Forest model as it demonstrated slightly superior performance. By assessing feature importance, we aimed to refine the model by focusing on the most relevant variables, enhancing its interpretability, and potentially further improving predictive accuracy. We plotted the ROC Curve and the Confusion Matrix and calculated the AUC for various numbers of features.
+
+<img src="figures/ROC_curve.svg" alt="F1 Score" width="700"/> 
+<img src="figures/confusion_matrix.svg" alt="F1 Score" width="700"/> 
 
 ## Installation 
 
