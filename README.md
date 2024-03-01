@@ -121,8 +121,11 @@ Below is the F1 Score and the AUC for the random forest:
 With the obtained results, we chose to utilize the Random Forest model as it demonstrated slightly superior performance. By assessing feature importance, we aimed to refine the model by focusing on the most relevant variables, enhancing its interpretability, and potentially further improving predictive accuracy. We plotted the ROC Curve and the Confusion Matrix and calculated the AUC for various numbers of features.
 
 <img src="figures/ROC_curve.svg" alt="F1 Score" width="700"/> 
+
 *Figure 5: ROC curve*
+
 <img src="figures/confusion_matrix.svg" alt="F1 Score" width="700"/> 
+
 *Figure 6: Confusion Matrix*
 
 ## Installation 
