@@ -17,7 +17,7 @@ Current endometriosis diagnostic methods are invasive and expensive, prompting t
 
 ## Dataset 
 
-The dataset included 56 endometriosis symptoms that were compiled based on an extensive review of relevant literature. The dataset used in this project consists of 800 examples, each containing the symptoms related to endometriosis. It is a continuous dataset, and each entry is labeled with a binary response (0 or 1) indicating the presence or absence of the respective symptom.
+The dataset included 56 endometriosis symptoms that were compiled based on an extensive review of relevant literature. The dataset used in this project consists of 800 examples, each containing the symptoms related to endometriosis. It is not a continuous dataset : each entry is labeled with a binary response (0 or 1) indicating the presence or absence of the respective symptom.
 
 | Feature                  | Importance |
 |--------------------------|------------|
